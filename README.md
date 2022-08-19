@@ -14,6 +14,17 @@ To be able to import the module, add the base directory of this repository to yo
 $ export PYTHONPATH="${PYTHONPATH}:/path/to/repo"
 ```
 
+Alternatively, the module can be installed decently. For this we recommend to create a new conda environment first:
+```
+$ conda create -n just_stats python=3.9
+```
+
+Then activate the environment with `conda activate just_stats`. Navigate one level up, outside the repository and then install the package via
+
+```
+python -m pip install -e multinomial-proportions
+```
+
 After that the class can be imported via
 
 ```python
